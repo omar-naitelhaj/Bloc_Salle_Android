@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/salleItem">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="307dp"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        app:srcCompat="@mipmap/door" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="-13dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/bloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="65dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/occupiedPhoto"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="342dp"
+        android:layout_marginEnd="26dp"
+        app:srcCompat="@mipmap/occupied" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bloc"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="35dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+</RelativeLayout>

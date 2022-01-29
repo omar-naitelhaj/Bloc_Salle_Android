@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.map.scannerhhhh.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/activity_graph_activity" />
+
+    <fragment
+        android:id="@+id/nav_scan"
+        android:name="com.map.scannerhhhh.ui.scan.ScanFragment"
+        android:label="@string/menu_scan"
+        tools:layout="@layout/fragment_scan" />
+
+    <fragment
+        android:id="@+id/nav_occupation"
+        android:name="com.map.scannerhhhh.ui.occupation.OccupationFragment"
+        android:label="@string/menu_occupation"
+        tools:layout="@layout/fragment_occupation" />
+</navigation>
